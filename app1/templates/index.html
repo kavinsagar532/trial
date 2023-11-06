@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Books</h1>
+    <table border='1'>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publication Date</th>
+            <th>Price</th>
+            <th>Is Expensive</th>
+        </tr>
+        {% for x in b1%}
+        <tr>
+            <td>{{x.Title}}</td>
+            <td>{{x.Author}}</td>
+            <td>{{x.PublicationDate}}</td>
+            <td>{{x.price}}</td>
+            <td>{{x.is_expensive}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
